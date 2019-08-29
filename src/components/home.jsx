@@ -18,7 +18,7 @@ class Home extends React.Component {
         let api = this.state.domain + 'api/productlist';
         axios.get(api).then((res) => {
                                         this.setState({list: res.data.result});
-                                        // console.log(this.state.list["0"].list);
+                                        // console.log('cjwwww',this.state.list["0"].list);
                                     }).catch(function(err) {console.log(err)});
     }
 
