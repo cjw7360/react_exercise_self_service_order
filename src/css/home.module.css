@@ -1,15 +1,15 @@
-.menu {
+.menupage {
     background-color: #fff;
 }
 
 
-.item_cate {
+.item_category {
     text-align: center;
     padding: .5rem;
     border: 1px solid #cccccc;
 }
 
-.item_list {
+.item_ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -18,7 +18,7 @@
     overflow:auto;
 }
 
-.itemcontainor {
+.item_container {
     background-color: azure;
     width: auto;
     height: auto;
@@ -27,21 +27,21 @@
     margin-top: .5rem;
 }
 
-.itemcontainor:hover {
+.item_container:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.inner {
+.item_inner {
     padding: 0;
     margin: 0;
 }
 
-.itemTitle {
+.item_title {
     font-weight: bold;
     padding-left: .5rem;
 }
 
-.itemPrice {
+.item_price {
     text-align: right;
     padding-right: .5rem;
 }
