@@ -45,3 +45,13 @@
     text-align: right;
     padding-right: .5rem;
 }
+
+.item_image {
+    width: 114px;
+    height: 114px;
+}
+
+.item_link {
+    text-decoration: none;
+    color: black;
+}
