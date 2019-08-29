@@ -1,5 +1,6 @@
 import React from 'react';
-import '@/css/home.scss'
+import '@/css/index.css'
+import cssobj from '@/css/home.module.css'
 const axios = require('axios');
 
 
@@ -25,11 +26,11 @@ class Home extends React.Component {
 
     genLi = (value, key) => {
         return (
-            <li key={key}>
-                <div className="inner">
+            <li key={key} className={cssobj.itemcontainor}>
+                <div className={cssobj.inner}>
                     <img src={require('../images/2.jpg')} alt="" />
-                    <p className="title">{value.title}</p>
-                    <p className="price">价格:{value.price}</p>
+                    <p className={cssobj.itemTitle}>{value.title}</p>
+                    <p className={cssobj.itemPrice}>价格:{value.price}</p>
                 </div>
             </li>
         )
@@ -37,9 +38,9 @@ class Home extends React.Component {
 
     genClass = (value, key) => {
         return (
-            <div key={key} className="item">
-            <h3 className="item_cate">{value.title}</h3>
-            <ul className="item_list">
+            <div key={key}>
+            <h3 className={cssobj.item_cate}>{value.title}</h3>
+            <ul className={cssobj.item_list}>
                 {value.list.map((value, key) => this.genLi(value, key))}
             </ul>
             </div>
@@ -49,7 +50,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home">
-                <div className="list">
+                <div className={cssobj.menu}>
                 {
                     this.state.list.map( (value, key) => this.genClass(value, key) )
                 }
